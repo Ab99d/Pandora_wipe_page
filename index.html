@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    <section class="wipe-page">
+        <div class="side-image"></div>
+        <main class="main">
+            <div class="container">
+                <!-- <img src="./assets/signal-2023-08-28-164928.png" alt="Pandora-logo"> -->
+                <h4 style="color: white; font-weight: 800; font-size: 30px;">Logo</h4>
+                <section class="wrapper">
+                    <div class="heading">
+                        <h1 class="text text-large">Placeholder</h1>
+                        <p class="text text-normal">Placeholder? <span><a href="#" class="text text-links">Placeholder</a></span>
+                        </p>
+                    </div>
+                    <form name="signin" class="form">
+                        <div class="input-control">
+                            <label for="email" class="input-label" hidden>Placeholder</label>
+                            <input type="email" name="email" id="email" class="input-field" placeholder="Placeholder">
+                        </div>
+                        <div class="input-control">
+                            <label for="password" class="input-label" hidden>Placeholder</label>
+                            <input type="password" name="password" id="password" class="input-field" placeholder="Placeholder">
+                        </div>
+                        <div class="input-control">
+                            <!-- <a href="#" class="text text-links">Forgot Password</a> -->
+                            <input id="submit-btn" type="submit" name="submit" class="input-submit" value="Submit">
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script>
+        var btn = document.getElementById("submit-btn")
+        btn.addEventListener("click", function(e) {
+            e.preventDefault()
+            Swal.fire(
+                'Good job!',
+                'Placeholder!',
+                'success'
+            )
+        })
+    </script>
+</body>
+</html>
